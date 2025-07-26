@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Amanda</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="icon" href="img/favicon.png" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <header>
+  <div class="container">
+    <img src="img/favicon.png" alt="logo Amanda" class="logo">
+
+    <button class="hamburger" onclick="toggleMenu()">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+    <nav id="menu">
+      <ul id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contato" class="btn-duvida">Dúvidas?</a>
+  </div>
+</header>
+
+
+<section class="hero" id="home">
+ <div class="container"> <h2>Bem vindos!</h2>
+  <p>Quero ajudar pequenos empreendedores a terem presença digital de forma profissional e acessível.</p>
+<a href="#contato" class="btn-saibamais"> Saiba Mais </a>
+</div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="container"> <h2 class="titulo-servicos">Meus Serviços</h2>
+    
+    <div class="box-wrapper">
+  <div class="box">
+      <img src="img/landigpage.png" alt="landingpage" >
+      <h3> Landing page</h3>
+      <p> Desenvolvo landing pages modernas e responsivas com HTML e CSS, ideais para capturar leads, promover produtos ou destacar serviços. Foco em design limpo, boa usabilidade e alta conversão.</p>
+</div>
+
+  <div class="box">
+  <img src="img/catalogo.png" alt="catalogo" >
+        <h3>Catálogo</h3>
+        <p>Transformo catálogos físicos em versões digitais elegantes e navegáveis. Ideal para divulgar produtos ou portfólios de forma organizada, visual e acessível em qualquer dispositivo.</p>
+      </div>
+      
+  <div class="box">
+        <img src="img/portfolio.png" alt="portfolio" >
+        <h3>Portfólio</h3>
+        <p>Crio portfólios online personalizados para destacar sua trajetória, habilidades e projetos. Um site único, com seu estilo, feito em HTML e CSS para transmitir profissionalismo e presença digital.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="extras-servicos">
+
+  <div class="motivos">
+    <div class="motivos-flex">
+      <div class="motivos-text">
+        <h2>Por que me escolher como seu profissional de programação?</h2>
+         <p>Escolher um profissional qualificado faz toda a diferença no sucesso do seu projeto. Com conhecimento técnico, visão estratégica e atenção aos detalhes, ofereço soluções personalizadas que aliam design, funcionalidade e performance. Cada projeto é tratado com seriedade, respeito aos prazos e foco total nos resultados que você precisa alcançar.</p>
+
+        <div class="icones">
+
+        <div>
+          <i class="fa-solid fa-medal" style="color: #B197FC;"></i>
+          <h3>Experiência Comprovada</h3>
+          <p>Resultados de alta qualidade em projetos anteriores garantem confiança e satisfaçaõ</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-shield-halved" style="color: #B197FC;"></i>
+          <h3>Confiabilidade Total</h3>
+          <p>Comprometido com prazos e entregas, assegurando a continuidade do seu negócio</p>
+        </div>
+
+       </div>
+
+      <a href="#contato" class="btn-saibamotivos">Saiba Mais</a>
+
+        </div>
+        <div class="motivos-img">
+       <img src="img/bannerpubli.png" alt="ilustrativa">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="processo">
+    <div class="container">
+      <h2>Entenda como transformo suas ideias em projetos de sucesso.</h2>
+      <div class="etapas">
+        <div>
+          <img src="img/meetingnewpic.png" alt="meeting">
+          <h3>Nosso processo é simples e eficaz, do início ao fim.</h3>
+          <p>Começamos com uma conversa para entender suas necessidades e objetivos,a reunião pode ser online (video chamada) ou podemos marcar um encontro pessoalmente.</p>
+        </div>
+        <div>
+          <img src="img/transparencianewpic.png" alt="transparencia">
+          <h3>Compartilho cada etapa para garantir a sua satisfação total.</h3>
+          <p>Após a definição do projeto, iniciamos com total transparência, durante a construção irei compartilhar cada passo e ter autorização para seguir.</p>
+        </div>
+        <div>
+          <img src="img/entreganewpic.png" alt="entrega">
+          <h3>Entrego o projeto final com suporte e acompanhamento.</h3>
+          <p>Estarei sempre disponíveis para ajustes e modificações simples, por um ano acompanharei de perto com total suporte sem cobrar valores extras.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="depoimentos">
+    <div class="container">
+      <h2>Depoimentos de Clientes</h2>
+      <p>Veja o feedback dos meus clientes!</p>
+
+      <div class="cards-depoimentos">
+        <div class="card">
+          <p>"Excelente trabalho, entregou antes do prazo e superou as expectativas!"</p>
+          <h4> Rodrigo Alcântara</h4>
+          <small>Gerente de marketing, Construtora.</small>
+        </div>
+        <div class="card">
+          <p>"Amanda me ajudou a criar um site lindo e funcional. Recomendo muito!"</p>
+          <h4>Maria Rejane Silva</h4>
+          <small> Prorietária, Loja de açai</small>
+        </div>
+        <div class="card">
+          <p>"Ótima profissional, super atenciosa com todos os detalhes, e até hoje me da total suporte."</p>
+          <h4>Jessica Ferreira</h4>
+          <small> Microempreendedora, Studio de beleza </small>
+          </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="sobre-container"> 
+    <img src="img/fotoprof.jpeg" alt="Foto Amanda" class="foto-sobre">
+  
+
+    <div class="texto-sobre">
+    <h2> Sobre mim </h2>
+    <p> Olá! Sou Amanda Santos, desenvolvedora em formação com uma trajetória marcada por reinvenção e paixão por aprender.</p>
+
+    <p>Minha carreira começou na área do turismo em 2010, onde desenvolvi habilidades de comunicação, atendimento ao público e olhar criativo, mas foi em 2016 que me apaixonei e dei meus primeiros passos no universo da tecnologia, ao iniciar um curso de Web Design — ali nasceu minha paixão por criar interfaces e experiências digitais.</p>
+
+     <p>Em 2019, querendo mais, aprofundei meus conhecimentos com um curso de Marketing Digital, unindo estratégia e criatividade. Hoje, estou me especializando como desenvolvedora Full Stack, estudando tecnologias do Front ao back-end e construindo projetos que unem funcionalidade e propósito.</p>
+
+    <p>Acredito que tecnologia é uma ferramenta poderosa de transformação — e é com essa energia que estou escrevendo um novo capítulo profissional, com código, coragem e muita vontade de evoluir.</p>
+
+  </div>
+  </div>
+</section>
+
+
+  <section id="contato" class="contato">
+  <h2>Entre em contato</h2>
+  <p>Fale comigo! Estou pronta para tirar dúvidas ou receber seu pedido.</p>
+
+  <div class="contato-cards">
+    <div class="card-contato">
+      <i class="fas fa-envelope"></i>
+      <h3>E-mail</h3>
+      <p>Envie um e-mail!</p>
+      <a href="oliveiraamanda.work@gmail.com">oliveiraamanda.work@gmail.com</a>
+    </div>
+
+    <div class="card-contato">
+      <i class="fas fa-phone"></i>
+      <h3> Telefone</h3>
+      <p>Atendimento por ligação/whatsapp.</p>
+      <a href="tel:+5585999566340">+55 (85) 99956-6340</a>
+    </div>
+
+    <div class="card-contato">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Localização</h3>
+      <p>Agende uma visita!</p>
+      <a href="https://www.google.com/maps/place/Av.+Beira+Mar,+4444+-+Mucuripe,+Fortaleza+-+CE,+60165-121/@-3.7226841,-38.4840058,17z/data=!3m1!4b1!4m6!3m5!1s0x7c747def14a6549:0x7094017e55d02a5b!8m2!3d-3.7226895!4d-38.4814309!16s%2Fg%2F11df7yr0gc?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Av. Beira Mar, 4444 - Fortaleza/CE</a>
+    </div>
+  </div>
+
+  <div class="redes-sociais">
+
+    <a href="https://wa.me/5585999566340" class="whatsapp" target="_blank" aria-label="fale conosco">
+      <i class="fa-brands fa-square-whatsapp"></i></a>
+
+    <a href="https://www.instagram.com/_amandaolivera" target="_blank" title="Instagram">
+     <i class="fa-brands fa-square-instagram" ></i></a>
+
+     <a href="https://github.com/amandadeoliveirasantos" target="_blank" title="Github">
+      <i class="fa-brands fa-square-github"> </i></a>
+
+    <a href="https://www.linkedin.com/in/amandaposantos" target="_blank" title="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+</section>
+<footer>
+  <div class="container">
+    <img src="img/newlogo.png" alt="logo" class="footer-logo">
+    <hr class="footer-line">
+      <p>&copy; 2025 Portfólio Amanda Santos. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+ <a href="https://wa.me/5585999566340" class="whatsapp-btn" target="_blank" aria-label="fale conosco">
+      <i class="fa-brands fa-square-whatsapp"></i></a>
+  
+
+
+      <script src="script.js"></script>
+</body>
+</html>

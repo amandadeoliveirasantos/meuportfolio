@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+  padding-top: 70px;
+    background-color: rgb(223, 183, 229);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: rgb(61, 37,102);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+header {
+  background-color: rgb(245, 245, 255);
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo  {
+   height: 40px;
+   width: auto;
+        }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+       }
+
+nav ul li a {
+     text-decoration: none;
+     color: rgb(61, 37, 102);
+     font-weight: bold;
+     font-size: large;
+       &:hover  {
+  background-color: rgb(223, 183, 229);
+  border-radius: 5px;
+
+}
+    
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(61, 37, 102);
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.btn-duvida  {
+  background-color: rgb(155,123,199);
+  color: rgb(245,245,255);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition:  background 0.3s ease;
+  &:hover  {
+  background-color: rgb(61,37,102);
+
+}
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: rgb(61, 37, 102);
+  cursor: pointer;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: rgb(217, 243, 243);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 999;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btn-duvida {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.hero {
+  background-image: url(img/bannertec.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  color:rgb(245, 245, 255);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: rgb(245,245,255);
+  font-weight: bold;
+}
+
+
+.btn-saibamais  {
+  background-color: rgb(61, 37, 102);
+  color: rgb(245,245,255);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition:  background 0.3s ease;
+  &:hover  {
+  background-color: rgb(223, 183, 229);
+
+}
+}
+
+.btn {
+  background-color: rgb(155,123,199);
+  color: rgb(245,245,255);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+      &:hover  {
+  background-color: rgb(223, 183, 229);
+
+}
+}
+
+.servicos {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  color:rgb(61, 37, 102);
+  margin-bottom: 40px;
+}
+
+.titulo-servicos{
+font-size: 2rem;
+margin-bottom: 40px;
+color: rgb(61, 37, 102);
+text-align: center;
+}
+
+
+
+.box-wrapper {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap; 
+ gap: 30px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+   }
+}
+
+.box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box h3 {
+  margin-top: 15px;
+  color: rgb(61, 37,102);
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+
+.motivos-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #3d2566;
+  text-align: center;
+}
+
+.motivos h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  color:rgb(61, 37, 102);
+}
+
+.motivos-text {
+ flex:1;
+ min-width: 300px;
+}
+
+.motivos .icones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.motivos-img {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.motivos-img  img {
+width: 80%;
+max-width: 400px;
+height: auto;
+border-radius: 10px;
+object-fit: contain;
+}
+
+.motivos .icones div {
+  flex: 1;
+  max-width: 300px;
+}
+
+.motivos i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.btn-saibamotivos {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: rgb(155,123,199);
+color: rgb(245, 245, 255);
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background 0.3s;
+&:hover  {
+  background-color: rgb(61,37,102);
+
+}
+}
+
+
+.processo {
+  padding: 60px 20px;
+  background-color: #f5f5ff;
+  text-align: center;
+  color: #3d2566;
+}
+
+.processo h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  color:rgb(61, 37, 102);
+}
+
+.etapas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.etapas div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.etapas img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.depoimentos {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #3d2566;
+}
+
+.depoimentos h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  color:rgb(61, 37, 102);
+}
+
+.cards-depoimentos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cards-depoimentos .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.cards-depoimentos .card h4 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.cards-depoimentos .card small {
+  color: #666;
+}
+
+
+#sobre {
+  padding: 60px 20px;
+  background: rgb(61,37,102);
+}
+
+.sobre-container {
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin:0 auto;
+  flex-wrap: wrap;
+ 
+}
+
+.foto-sobre {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px rgba(0, 0 ,0 , 0.1);
+}
+
+.texto-sobre {
+flex: 1;
+max-width: 600px;
+color: rgb(245, 245, 255);
+font-size: 1.1rem;
+line-height: 1.6;
+ 
+}
+
+.texto-sobre h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  color:rgb(245, 245, 255);
+}
+
+
+.contato {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgb(217, 243, 243);
+}
+
+.contato h2 {
+  font-family:  "Bricolage Grotesque", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  color:rgb(61, 37, 102);
+  margin-bottom: 10px;
+}
+
+.contato p {
+  color: #3d2566;
+  margin-bottom: 40px;
+}
+
+.contato-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card-contato {
+  max-width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card-contato i {
+  font-size: 30px;
+  color: rgb(61,37,102); /* roxinho */
+  margin-bottom: 15px;
+}
+
+.card-contato h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-contato a {
+  display: block;
+  margin-top: 10px;
+  color: rgb(61, 37,102);
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+  text-decoration: underline;
+}
+}
+
+
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes-sociais i {
+  font-size: 28px;
+  color: rgb(155,123,199);
+  transition: transform 0.3s ease;
+  &:hover {
+  transform: scale(1.2);
+  color: rgb(61,37,102);
+}
+}
+
+
+footer {
+  background: rgb(245, 245, 255);
+  color: rgb(61, 37, 102);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo {
+ height: 150px;
+ width: auto;
+ margin-bottom: 10px;
+}
+.footer-line {
+ width: 1000px;
+ margin: 10px auto;
+ border: 1px solid rgb(61, 37, 102);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1001;
+  background-color: transparent;
+  font-size: 50px;
+  color: rgb(155,123,199); 
+  transition: transform 0.3s ease;
+  &:hover {
+  transform: scale(1.1);
+  color: rgb(61, 37,102); 
+}
+}
+
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(217, 243, 243);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(61, 37, 102);
+    transition: 0.4s;
+    border-radius: 2px;
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .btn-duvida {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Outras seções do site adaptadas */
+
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .servicos,
+  .etapas,
+  .motivos-flex,
+  .sobre-container,
+  .cards-depoimentos,
+  .contato-cards {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .foto-sobre {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+
